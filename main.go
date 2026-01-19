@@ -54,7 +54,7 @@ func main() {
 			fmt.Println("usage: manager init <vault-file-path>")
 			os.Exit(1)
 		}
-		path := os.Args[2]
+		path := os.Args[2]+".json"
 		initVault(path)
 	case "add":
 		if len(os.Args) < 6 {
